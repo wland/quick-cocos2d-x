@@ -525,7 +525,9 @@ void PageView::handleReleaseLogic(const CCPoint &touchPoint)
         int pageCount = _pages->count();
         float curPageLocation = curPagePos.x;
         float pageWidth = getSize().width;
-        float boundary = pageWidth/2.0f;
+		//float boundary = pageWidth/2.0f;
+		//调整滑动响应间距
+		float boundary = pageWidth / 8.0f;
         if (curPageLocation <= -boundary)
         {
             if (_curPageIdx >= pageCount-1)
