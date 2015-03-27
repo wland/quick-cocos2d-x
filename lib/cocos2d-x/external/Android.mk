@@ -17,7 +17,7 @@ LOCAL_SRC_FILES := \
     extra/luabinding/CZHelperFunc_luabinding.cpp
 
 LOCAL_SRC_FILES += \
-    extra/platform/android/CCHTTPRequestAndroid.cpp \
+    extra/network/CCHTTPRequest.cpp \
     extra/luabinding/cocos2dx_httprequest_luabinding.cpp
 
 ifeq ($(CC_PHYSICS_ENABLED),1)
